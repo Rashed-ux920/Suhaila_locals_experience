@@ -1,101 +1,71 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>{{config('app.name')}}</title>
+@extends('userfront.layout.master')
+@section('content')
 
-        @include('userfront.includes.headlinks')
-    </head>
-    <body class="antialiased">
-        <header id="header" class="header d-flex align-items-center sticky-top">
-            <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+            {{-- start swiper --}}
+                @include('userfront.includes.sectiones.firstsection')
+            {{-- end swiper --}}
 
+            {{-- start misstion --}}
 
-              @if (Auth::check())
-              <a href="{{route('home') }}" class="logo d-flex align-items-center">
-                 <img src="frontuser/image/logo.webp" alt="logo of website">
-                <h1 class="sitename">Suhaila Locals</h1>
-              </a>
-              @else
-              <a href="{{route('landing') }}"class="logo d-flex align-items-center">
-                <img src="frontuser/image/logo.webp" alt="logo of website">
+                @include('userfront.includes.sectiones.misstion')
 
-                <h1 class="sitename">Suhaila Locals</h1>
-              </a>
-              @endif
-                <nav id="navmenu" class="navmenu">
-                    <ul>
-                    <li><a href="{{route('landing')}}" class="active">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="services.html">About us</a></li>
-                    {{-- <li><a href="portfolio.html">Portfolio</a></li> --}}
-                    {{-- <li><a href="team.html">Team</a></li> --}}
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                        @if (Route::has('login'))
-                            <li>
-                                @auth
-                                    <a href="{{ url('/home') }}" class="btn btn-get-started">{{Auth::user()->name}}</a>
-                                @else
-                                {{-- <a href="{{ route('login') }}" class="font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Log in</a> --}}
+            {{-- end misstion --}}
 
-                                    @if (Route::has('register'))
-                                        <a href="{{ route('register') }}" class="btn btn-get-started">Register</a>
-                                    @endif
-                                @endauth
-                            </li>
-                        @endif
-                    {{-- <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                        <ul>
-                        <li><a href="#">Dropdown 1</a></li>
-                        <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                            <ul>
-                            <li><a href="#">Deep Dropdown 1</a></li>
-                            <li><a href="#">Deep Dropdown 2</a></li>
-                            <li><a href="#">Deep Dropdown 3</a></li>
-                            <li><a href="#">Deep Dropdown 4</a></li>
-                            <li><a href="#">Deep Dropdown 5</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Dropdown 2</a></li>
-                        <li><a href="#">Dropdown 3</a></li>
-                        <li><a href="#">Dropdown 4</a></li>
-                        </ul>
-                    </li> --}}
+                <!-- Stats Section -->
+    <section id="stats" class="stats section light-background">
 
-                    </ul>
-                    <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-                </nav>
+        <div class="container">
 
+          <div class="row gy-4 justify-content-center">
+
+            <div class="col-lg-5">
+              <div class="images-overlap">
+                <img src="assets/img/img_v_1.jpg" alt="student" class="img-fluid img-1" data-aos="fade-up">
+              </div>
             </div>
-        </header>
-        {{-- <div class="relative sm:flex sm:justify-center sm:items-center min-h-screen bg-dots-darker bg-center bg-gray-100 dark:bg-dots-lighter dark:bg-gray-900 selection:bg-red-500 selection:text-white">
-            @if (Route::has('login'))
-                <div class="sm:fixed sm:top-0 sm:right-0 p-6 text-right">
-                    @auth
-                        <a href="{{ url('/home') }}" class="font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Home</a>
-                    @else
-                        <a href="{{ route('login') }}" class="font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Log in</a>
 
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}" class="ml-4 font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Register</a>
-                        @endif
-                    @endauth
+            <div class="col-lg-4 ps-lg-5">
+              <span class="content-subtitle">Why Us</span>
+              <h2 class="content-title">Far far away Behind the Word Mountains</h2>
+              <p class="lead">
+                At Suhaila Local's Experience,
+                 we offer more than just tours—we create meaningful connections with Aqaba's vibrant culture, history, and community. Our personalized experiences, guided by passionate locals, ensure you’ll uncover the hidden gems of this coastal city while supporting sustainable tourism.
+                 Choose us for an authentic journey that leaves lasting memories and a deeper appreciation for Aqaba.
+              </p>
+              <p class="mb-5">
+                There live the blind texts. Separated they live in Bookmarksgrove
+                right at the coast of the Semantics, a large language ocean.
+              </p>
+              <div class="row mb-5 count-numbers">
+
+                <!-- Start Stats Item -->
+                <div class="col-4 counter" data-aos="fade-up" data-aos-delay="100">
+                  <span data-purecounter-separator="true" data-purecounter-start="0" data-purecounter-end="3919" data-purecounter-duration="1" class="purecounter number"></span>
+                  <span class="d-block">Coffee</span>
                 </div>
-            @endif
+                <!-- End Stats Item -->
 
+                <!-- Start Stats Item -->
+                <div class="col-4 counter" data-aos="fade-up" data-aos-delay="200">
+                  <span data-purecounter-separator="true" data-purecounter-start="0" data-purecounter-end="2831" data-purecounter-duration="1" class="purecounter number"></span>
+                  <span class="d-block">Codes</span>
+                </div>
+                <!-- End Stats Item -->
 
+                <!-- Start Stats Item -->
+                <div class="col-4 counter" data-aos="fade-up" data-aos-delay="300">
+                  <span data-purecounter-separator="true" data-purecounter-start="0" data-purecounter-end="1914" data-purecounter-duration="1" class="purecounter number"></span>
+                  <span class="d-block">Projects</span>
+                </div>
+                <!-- End Stats Item -->
 
-        </div> --}}
+              </div>
+            </div>
 
-          <!-- Scroll Top -->
-            <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+          </div>
 
-            <!-- Preloader -->
-            <div id="preloader"></div>
-             @include('userfront.includes.bodyscripts')
-    </body>
-</html>
+        </div>
+      </section><!-- /Stats Section -->
+
+@endsection

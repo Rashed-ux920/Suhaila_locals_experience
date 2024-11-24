@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\viewcontroller;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,9 +15,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// the user side pages and logice
+
 Route::get('/', function () {
     return view('welcome');
 })->name('landing');
+
+Route::get('/about',[viewcontroller::class,'aboutpage'])->name('about');
+
+Route::get('/blog',[viewcontroller::class,'blogpage'])->name('blog');
 
 Auth::routes();
 

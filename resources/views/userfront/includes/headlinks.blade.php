@@ -2,7 +2,7 @@
 <link rel="preconnect" href="https://fonts.bunny.net">
 <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
 
-<link href="{{asset('/frontuser/assets/img/favicon.png')}}" rel="icon">
+<link href="{{asset('/frontuser/image/logo.webp')}}" rel="icon">
 <link href="{{asset('/frontuser/assets/img/apple-touch-icon.png')}}" rel="apple-touch-icon">
 
 <!-- Fonts -->
