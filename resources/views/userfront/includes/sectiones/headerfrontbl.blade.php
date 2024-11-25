@@ -21,7 +21,7 @@
                 <li><a href="services.html">Services</a></li>
                 {{-- <li><a href="services.html">About us</a></li> --}}
                 <li><a href="{{route('blog')}}">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="{{route('contact')}}">Contact</a></li>
 
                 {{-- this dropbown ment to be for future plane --}}
 
@@ -49,7 +49,7 @@
                         <li><a href="#">Dropdown 4</a></li>
                     </ul>
                 </li> --}}
-                
+
                 <li>
                     @if (Route::has('login'))
                         <li>

@@ -12,4 +12,7 @@ class viewcontroller extends Controller
     public function blogpage(){
         return view('userfront.userpage.blog');
     }
+    public function contactpage(){
+        return view('userfront.userpage.contact');
+    }
 }

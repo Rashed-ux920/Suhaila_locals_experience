@@ -9,7 +9,7 @@
               right at the coast of the Semantics, a large language ocean.
             </p>
             <p class="mb-0">
-              <a href="#" class="btn-learn-more">Learn more</a>
+              <a href="{{route('about')}}" class="btn-learn-more">Learn more</a>
             </p>
           </div>
         </div>
@@ -17,14 +17,16 @@
           <div class="widget">
             <h3 class="widget-heading">Navigation</h3>
             <ul class="list-unstyled float-start me-5">
-              <li><a href="#">Overview</a></li>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Find Buyers</a></li>
+              {{-- <li><a href="#">Overview</a></li> --}}
+              <li><a href="{{route('about')}}">About Us</a></li>
+              <li><a href="{{route('blog')}}">blog</a></li>
+              <li><a href="{{route('contact')}}">contact us</a></li>
             </ul>
             <ul class="list-unstyled float-start">
-              <li><a href="#">Overview</a></li>
-              <li><a href="#">About Us</a></li>
+              {{-- <li><a href="#">Overview</a></li> --}}
+              <li><a href="{{route('about')}}">About Us</a></li>
               <li><a href="#">Services</a></li>
+              <li><a href="{{route('contact')}}">contact us</a></li>
             </ul>
           </div>
         </div>
@@ -48,20 +50,17 @@
             <h3 class="widget-heading">Connect</h3>
             <ul class="list-unstyled social-icons light mb-3">
               <li>
-                <a href="#"><span class="bi bi-facebook"></span></a>
+                <a href="https://web.facebook.com/suhailacook"><span class="bi bi-facebook"></span></a>
               </li>
               <li>
-                <a href="#"><span class="bi bi-twitter-x"></span></a>
+                <a href="https://www.instagram.com/suhaila.cook?igsh=dGpyeGJ5dGNhbXow"><span class="bi bi-instagram"></span>
+                </a>
               </li>
               <li>
-                <a href="#"><span class="bi bi-linkedin"></span></a>
+                <a href="mailto:suhaila.cook@gmail.com"><span class="bi bi-envelope"></span>
+                </a>
               </li>
-              <li>
-                <a href="#"><span class="bi bi-google"></span></a>
-              </li>
-              <li>
-                <a href="#"><span class="bi bi-google-play"></span></a>
-              </li>
+
             </ul>
           </div>
 
@@ -88,13 +87,13 @@
       </div>
 
       <div class="copyright d-flex flex-column flex-md-row align-items-center justify-content-md-between">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">Active.</strong> <span>All Rights Reserved</span></p>
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Suhaila_locals</strong> <span>All Rights Reserved</span></p>
         <div class="credits">
           <!-- All the links in the footer should remain intact. -->
           <!-- You can delete the links only if you've purchased the pro version. -->
           <!-- Licensing information: https://bootstrapmade.com/license/ -->
           <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed By <a href="https://themewagon.com">ThemeWagon</a>
+          Designed by <a href="https://rashed-ux920.github.io/my-profile/">Rashed Alaqrabawy</a> Distributed By <a href="www.linkedin.com/in/rashed-alaqrabawy-28899b257">Rashed Alaqrabawy</a>
         </div>
       </div>
     </div>

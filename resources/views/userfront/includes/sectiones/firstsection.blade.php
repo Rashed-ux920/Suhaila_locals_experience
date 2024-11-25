@@ -30,10 +30,10 @@
             </script>
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <img src="frontuser/assets/img/img_h_6.jpg" alt="Image" class="img-fluid">
+                <img src="frontuser/image/Aqaba.webp" alt="Image" class="img-fluid">
               </div>
               <div class="swiper-slide">
-                <img src="frontuser/assets/img/img_h_7.jpg" alt="Image" class="img-fluid">
+                <img src="frontuser/image/welcome.jpg" alt="Image" class="img-fluid">
               </div>
               <div class="swiper-slide">
                 <img src="frontuser/assets/img/img_h_8.jpg" alt="Image" class="img-fluid">

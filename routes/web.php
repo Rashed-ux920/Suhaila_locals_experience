@@ -25,6 +25,8 @@ Route::get('/about',[viewcontroller::class,'aboutpage'])->name('about');
 
 Route::get('/blog',[viewcontroller::class,'blogpage'])->name('blog');
 
+Route::get('/contact',[viewcontroller::class,'contactpage'])->name('contact');
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
