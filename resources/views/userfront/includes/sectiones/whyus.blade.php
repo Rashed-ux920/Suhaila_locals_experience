@@ -7,7 +7,7 @@
 
                         <div class="col-lg-5">
                           <div class="images-overlap">
-                            <img src="frontuser/assets/img/img_v_1.jpg" alt="student" class="img-fluid img-1" data-aos="fade-up">
+                            <img src="frontuser/image/whyus.jpg" alt="student" class="img-fluid img-1" data-aos="fade-up">
                           </div>
                         </div>
 
@@ -26,22 +26,22 @@
 
                             <!-- Start Stats Item -->
                             <div class="col-4 counter" data-aos="fade-up" data-aos-delay="100">
-                              <span data-purecounter-separator="true" data-purecounter-start="0" data-purecounter-end="3919" data-purecounter-duration="1" class="purecounter number"></span>
-                              <span class="d-block">service 1</span>
+                              {{-- <span data-purecounter-separator="true" data-purecounter-start="0" data-purecounter-end="3919" data-purecounter-duration="1" class="purecounter number"></span> --}}
+                              <span class="d-block">Cultural Tours</span>
                             </div>
                             <!-- End Stats Item -->
 
                             <!-- Start Stats Item -->
                             <div class="col-4 counter" data-aos="fade-up" data-aos-delay="200">
-                              <span data-purecounter-separator="true" data-purecounter-start="0" data-purecounter-end="2831" data-purecounter-duration="1" class="purecounter number"></span>
-                              <span class="d-block">service 2</span>
+                              {{-- <span data-purecounter-separator="true" data-purecounter-start="0" data-purecounter-end="2831" data-purecounter-duration="1" class="purecounter number"></span> --}}
+                              <span class="d-block">Cooking Experiences</span>
                             </div>
                             <!-- End Stats Item -->
 
                             <!-- Start Stats Item -->
                             <div class="col-4 counter" data-aos="fade-up" data-aos-delay="300">
-                              <span data-purecounter-separator="true" data-purecounter-start="0" data-purecounter-end="1914" data-purecounter-duration="1" class="purecounter number"></span>
-                              <span class="d-block">service 3</span>
+                              {{-- <span data-purecounter-separator="true" data-purecounter-start="0" data-purecounter-end="1914" data-purecounter-duration="1" class="purecounter number"></span> --}}
+                              <span class="d-block">Sunset Story Boat Tours</span>
                             </div>
                             <!-- End Stats Item -->
 

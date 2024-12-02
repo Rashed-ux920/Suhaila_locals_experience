@@ -15,4 +15,7 @@ class viewcontroller extends Controller
     public function contactpage(){
         return view('userfront.userpage.contact');
     }
+    public function servicepage(){
+        return view('userfront.userpage.service');
+    }
 }

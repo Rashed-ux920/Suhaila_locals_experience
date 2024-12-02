@@ -36,7 +36,7 @@
                 <img src="frontuser/image/welcome.jpg" alt="Image" class="img-fluid">
               </div>
               <div class="swiper-slide">
-                <img src="frontuser/assets/img/img_h_8.jpg" alt="Image" class="img-fluid">
+                <img src="frontuser/image/firstsection.jpg" alt="Image" class="img-fluid">
               </div>
             </div>
             <div class="swiper-pagination"></div>

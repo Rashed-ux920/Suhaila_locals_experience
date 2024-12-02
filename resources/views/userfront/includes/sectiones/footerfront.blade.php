@@ -25,7 +25,7 @@
             <ul class="list-unstyled float-start">
               {{-- <li><a href="#">Overview</a></li> --}}
               <li><a href="{{route('about')}}">About Us</a></li>
-              <li><a href="#">Services</a></li>
+              <li><a href="{{route('service')}}">Services</a></li>
               <li><a href="{{route('contact')}}">contact us</a></li>
             </ul>
           </div>

@@ -18,7 +18,7 @@
             <ul>
                 <li><a href="{{route('landing')}}" class="active">Home</a></li>
                 <li><a href="{{route('about')}}">About</a></li>
-                <li><a href="services.html">Services</a></li>
+                <li><a href="{{route('service')}}">Services</a></li>
                 {{-- <li><a href="services.html">About us</a></li> --}}
                 <li><a href="{{route('blog')}}">Blog</a></li>
                 <li><a href="{{route('contact')}}">Contact</a></li>

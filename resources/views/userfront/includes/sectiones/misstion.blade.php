@@ -6,7 +6,7 @@
                 <div class="col-sm-12 col-md-5 col-lg-4 col-xl-4 order-lg-2 offset-xl-1 mb-4">
                     <div class="img-wrap text-center text-md-left" data-aos="fade-up" data-aos-delay="100">
                         <div class="img">
-                            <img src="frontuser/assets/img/img_v_3.jpg" alt="circle image" class="img-fluid">
+                            <img src="{{asset('frontuser/image/misstion1.jpg')}}" alt="circle image" class="img-fluid">
                         </div>
                     </div>
                 </div>
